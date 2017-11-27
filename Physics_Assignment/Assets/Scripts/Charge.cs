@@ -17,7 +17,7 @@ public class Charge : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.localScale = new Vector3 (m_ChargeAmount/50,this.transform.localScale.y, this.transform.localScale.z);
+		this.transform.localScale = new Vector3 (m_ChargeAmount/30,this.transform.localScale.y, this.transform.localScale.z);
 	}
 
 	public void Toggle_Visibility()
@@ -28,7 +28,7 @@ public class Charge : MonoBehaviour {
 
 	IEnumerator Charge_Up()
 	{
-		while(m_ChargeAmount < 50)
+		while(m_ChargeAmount < 30)
 		{
 			m_ChargeAmount += 1;
 			yield return new WaitForSeconds (.1f);
